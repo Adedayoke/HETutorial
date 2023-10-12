@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+.main_page{
+    padding: 50px 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.timeSet_cont{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    padding: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.time{
+    margin-left: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.time input{
+    padding: 5px;
+    border-radius: 1px solid black;
 }
-
-.App-link {
-  color: #61dafb;
+.start_btn{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    font-weight: 700;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
 }
+.start_btn:hover{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+.Questions_page{
+    padding: 50px;
+}
+.timeInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Subjects_panel{
+    display: flex;
+}
+.active{
+    background-color: blue;
+    color: white;
+}
+.notActive{
+    color: blue;
+}
+.sub_panel_display{
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .5s;
+    font-weight: 600;
+}
+.sub_panel_display:hover{
+    color: white;
+    background-color: blue;
+}
+.Numbers_panel{
+    padding: 10px 0;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    
+}
+.Numbers_panel  span{
+    padding: 5px 10px;
+    border: 1px solid blue;
+    color: blue;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.Numbers_panel  span:hover{
+    color: white;
+    background-color: blue;
+}
+.questionCont{
+    display: flex;
+    justify-content: start;
+    padding: 10px 0;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.questId{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.options{
+    margin-top: 10px;
+}
+.buttons{
+    margin: 10px 0;
+}
+.btn{
+    margin-right: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    color: blue;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: white;
+    background-color: blue;
+}
+.result{
+    padding: 50px;
+}
+@media (max-width: 768px){
+    .timeInfo{
+        display: block;
+    }
 }
