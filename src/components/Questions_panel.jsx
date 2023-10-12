@@ -1,6 +1,6 @@
-import React from 'react'
-import { test_details } from '../utils/details'
-import { useCont } from './Context/Context'
+import React from 'react';
+import { test_details } from '../utils/details';
+import { useCont } from './Context/Context';
 
 const Questions_panel = () => {
   const subFunc = useCont();
@@ -50,6 +50,9 @@ const Questions_panel = () => {
                 <div className="question">
                   {question.question}
                 </div>
+                {question.img_src && <div className="image">
+                  <img src={question.img_src} alt="" />
+                </div>}
                 <div className="options">
                   {
                     question.options[0] && 
@@ -84,7 +87,7 @@ const Questions_panel = () => {
                     </div>
                   }
                   {
-                    question.options[4] &&
+                    question.options[4].value &&
                     <div className="eachOption">
                       <input onChange={()=>myOnchangeFunction()} checked={question.options[4].selected} onClick={(e)=>pick(e, question.id, question.options[4].value)} type="radio" name="rad" id="" />&nbsp;
                       <span>E.</span> &nbsp;
