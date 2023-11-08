@@ -36,6 +36,8 @@ const Main_page = () => {
     nav('/exam-room')
   }
   return (
+    <>
+    <div className='bg-img'></div>
     <div className='main_page'>
       <h1>Welcome to HETutorials.</h1>
 
@@ -75,7 +77,8 @@ const Main_page = () => {
         <button onClick={(e)=>submit_user_selection(e)} className='start_btn'>Start Test</button>
       </form>
     </div>
+    </>
   )
 }
 
-export default Main_page
+export default Main_page;
