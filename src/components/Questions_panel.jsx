@@ -29,6 +29,9 @@ const Questions_panel = () => {
               else{
                 option.selected = false
               }
+              if(option.selected === true){
+                question.selected_ans = true
+              }
             })
           }
         })

@@ -15,6 +15,7 @@ const Numbers_panel = () => {
     }
     return;
   });
+
   const clickedNo = (number)=>{
     subFunc.dispatch({
       type: 'ACTIVE_QUESTION',
@@ -73,7 +74,7 @@ const Numbers_panel = () => {
       {
         current_sub_quest.map((subject)=>{
           return(
-            <span key={current_sub_quest.indexOf(subject) + 1} onClick={()=>clickedNo(current_sub_quest.indexOf(subject))}>{current_sub_quest.indexOf(subject) + 1}</span>
+            <span className={subject.selected_ans ? "answered": "not_answered"} key={current_sub_quest.indexOf(subject) + 1} onClick={()=>clickedNo(current_sub_quest.indexOf(subject))}>{current_sub_quest.indexOf(subject) + 1}</span>
           )
         })
       }

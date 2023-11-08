@@ -89,7 +89,6 @@
 .Numbers span{
     padding: 5px 10px;
     border: 1px solid blue;
-    color: blue;
     display: block;
     margin: 10px 10px 0 0;
     cursor: pointer;
@@ -143,6 +142,13 @@
     width: 100%;
     height: 100%;
 }
+.answered{
+    background-color: blue;
+    color: white;
+}
+.not_answered{
+    color: blue;
+}
 @media (max-width: 768px){
     .timeInfo{
         display: block;
@@ -170,5 +176,10 @@
     }
     .Questions_page{
         padding: 20px;
+    }
+    .sub_panel_display{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
