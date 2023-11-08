@@ -153,10 +153,10 @@
         padding: 20px 10px;
         font-size: 13px;
     }
-    .main_page h1{
+    .App h1{
         font-size: 30px;
     }
-    .main_page h2{
+    .App h2{
         font-size: 20px;
     }
     .timeSet_cont{
@@ -167,5 +167,8 @@
     .time{
         margin-left: 0;
         margin-bottom: 10px;
+    }
+    .Questions_page{
+        padding: 20px;
     }
 }
