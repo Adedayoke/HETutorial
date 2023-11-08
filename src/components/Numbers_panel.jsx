@@ -69,6 +69,7 @@ const Numbers_panel = () => {
         <button onClick={()=>nextBtn()} className='btn nxt'>Next</button>
         <button onClick={()=>calcScore()} className='btn smt'>Submit</button>
       </div>
+      <div className='Numbers'>
       {
         current_sub_quest.map((subject)=>{
           return(
@@ -76,7 +77,7 @@ const Numbers_panel = () => {
           )
         })
       }
-
+      </div>
     </div>
   )
 };

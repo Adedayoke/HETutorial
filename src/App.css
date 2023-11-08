@@ -64,18 +64,21 @@
 }
 .Numbers_panel{
     padding: 10px 0;
-
-    
 }
-.Numbers_panel  span{
+.Numbers{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Numbers span{
     padding: 5px 10px;
     border: 1px solid blue;
     color: blue;
-    display: inline-block;
-    margin-right: 10px;
+    display: block;
+    margin: 10px 10px 0 0;
     cursor: pointer;
 }
-.Numbers_panel  span:hover{
+.Numbers  span:hover{
     color: white;
     background-color: blue;
 }
@@ -127,5 +130,16 @@
 @media (max-width: 768px){
     .timeInfo{
         display: block;
+    }
+}
+@media (max-width: 476px){
+    .timeSet_cont{
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+    .time{
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 }
