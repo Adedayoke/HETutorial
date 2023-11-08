@@ -149,6 +149,16 @@
     }
 }
 @media (max-width: 476px){
+    .main_page{
+        padding: 20px 10px;
+        font-size: 13px;
+    }
+    .main_page h1{
+        font-size: 30px;
+    }
+    .main_page h2{
+        font-size: 20px;
+    }
     .timeSet_cont{
         display: block;
         padding: 10px;
